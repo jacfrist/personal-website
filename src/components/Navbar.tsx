@@ -31,7 +31,7 @@ const Navbar = () => {
   const navLinks = [
     { title: 'Home', path: '/' },
     { title: 'Projects', path: '/projects' },
-    { title: 'Publications', path: '/publications' },
+    // { title: 'Publications', path: '/publications' },
     { title: 'CV', path: '/cv' },
     { title: 'Extracurriculars', path: '/extracurriculars' },
     { title: 'Contact', path: '/contact' },
@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <NavLink to="/" className="text-feldgrau font-bold text-xl">
-              <span className="text-battleship-gray">Vanderbilt</span> PhD
+              <span className="text-battleship-gray">Jacqueline</span> Frist
             </NavLink>
           </div>
 

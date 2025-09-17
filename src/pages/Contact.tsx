@@ -53,27 +53,28 @@ const Contact = () => {
       {/* Header */}
       <section className="container-section text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-feldgrau">Get in Touch</h1>
-        <p className="text-lg md:text-xl text-ash-gray max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-battleship-gray max-w-3xl mx-auto">
           Have a question or want to collaborate? Feel free to reach out to me using the contact information below or the form.
         </p>
       </section>
 
       {/* Contact Content */}
       <section className="container-section">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-1 gap-12">
           {/* Contact Information */}
-          <div className="bg-white/50 rounded-lg p-8 shadow-md border border-silver/30">
+          <div className="bg-white/50 rounded-lg p-8 shadow-md border border-silver/30 grid md:grid-cols-2 gap-12">
+          <div className="space-y-6">
             <h2 className="text-2xl font-bold mb-6 text-feldgrau">Contact Information</h2>
             
-            <div className="space-y-6">
+            
               <div className="flex items-start">
                 <div className="bg-feldgrau/10 p-2 rounded-full mr-4">
                   <Mail className="h-5 w-5 text-feldgrau" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-feldgrau mb-1">Email</h3>
-                  <a href="mailto:your.name@vanderbilt.edu" className="text-battleship-gray hover:text-feldgrau transition-colors">
-                    your.name@vanderbilt.edu
+                  <a href="jacfrist@gmail.com" className="text-battleship-gray hover:text-feldgrau transition-colors">
+                    jacfrist@gmail.com
                   </a>
                 </div>
               </div>
@@ -91,30 +92,20 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              
-              <div className="flex items-start">
-                <div className="bg-feldgrau/10 p-2 rounded-full mr-4">
-                  <Phone className="h-5 w-5 text-feldgrau" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-feldgrau mb-1">Phone</h3>
-                  <p className="text-battleship-gray">(123) 456-7890</p>
-                </div>
-              </div>
             </div>
             
             <div className="mt-10">
               <h3 className="text-lg font-semibold text-feldgrau mb-4">Connect with me</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://github.com/jacfrist" 
                   className="bg-feldgrau/10 hover:bg-feldgrau/20 p-3 rounded-full text-feldgrau transition-colors"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/jacqueline-frist/" 
                   className="bg-feldgrau/10 hover:bg-feldgrau/20 p-3 rounded-full text-feldgrau transition-colors"
                   aria-label="LinkedIn"
                 >
@@ -125,7 +116,7 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white/50 rounded-lg p-8 shadow-md border border-silver/30">
+          {/* <div className="bg-white/50 rounded-lg p-8 shadow-md border border-silver/30">
             <h2 className="text-2xl font-bold mb-6 text-feldgrau">Send a Message</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -207,24 +198,24 @@ const Contact = () => {
                 )}
               </Button>
             </form>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Map or Additional Info Section */}
       <section className="container-section bg-silver/20 py-16 text-center">
         <h2 className="text-2xl font-bold mb-6 text-feldgrau">Office Hours</h2>
-        <p className="text-ash-gray max-w-3xl mx-auto">
+        <p className="text-battleship-gray max-w-3xl mx-auto">
           I'm available for meetings and discussions during my office hours:
         </p>
         <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
           <div className="bg-white/70 p-4 rounded-lg shadow-sm">
             <h3 className="font-semibold text-feldgrau">Tuesday</h3>
-            <p className="text-battleship-gray">10:00 AM - 12:00 PM</p>
+            <p className="text-battleship-gray">3:00 PM - 4:30 PM</p>
           </div>
           <div className="bg-white/70 p-4 rounded-lg shadow-sm">
             <h3 className="font-semibold text-feldgrau">Thursday</h3>
-            <p className="text-battleship-gray">2:00 PM - 4:00 PM</p>
+            <p className="text-battleship-gray">3:00 PM - 4:30 PM</p>
           </div>
         </div>
       </section>

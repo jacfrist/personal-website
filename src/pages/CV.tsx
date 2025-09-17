@@ -10,14 +10,9 @@ const CV = () => {
       {/* Header */}
       <section className="container-section text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-feldgrau">Curriculum Vitae</h1>
-        <p className="text-lg md:text-xl text-ash-gray max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-battleship-gray max-w-3xl mx-auto">
           My academic, research, and professional experience in the field of Computer Science.
         </p>
-        <div className="mt-6">
-          <Button className="bg-feldgrau hover:bg-feldgrau/90 text-timberwolf">
-            <Download className="mr-2 h-4 w-4" /> Download CV
-          </Button>
-        </div>
       </section>
 
       {/* CV Content */}
@@ -35,12 +30,12 @@ const CV = () => {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-xl font-bold text-feldgrau">PhD in Computer Science</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">Upcoming - Fall 2023</Badge>
+                  <Badge variant="outline" className="bg-silver/20">August 2025 - May 2030 (Expected)</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Vanderbilt University, Nashville, TN</p>
-              <p className="text-ash-gray">
-                Starting PhD program with research focus on [your research area]. 
+              <p className="text-battleship-gray mb-2"><i>Vanderbilt University, Nashville, TN</i></p>
+              <p >
+                Currently pursuing research areas in computer graphics, security, and artifical intelligence. 
               </p>
             </div>
             
@@ -49,15 +44,17 @@ const CV = () => {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-xl font-bold text-feldgrau">BS in Computer Science</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">2019 - 2023</Badge>
+                  <Badge variant="outline" className="bg-silver/20">2022 - 2025</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Vanderbilt University, Nashville, TN</p>
-              <p className="text-ash-gray mb-2">
-                GPA: 3.X/4.0
+              <p className="text-battleship-gray mb-2"><i>Vanderbilt University, Nashville, TN</i></p>
+              <p className="text-battleship-gray mb-2">
+                GPA: 3.7/4.0
               </p>
-              <p className="text-ash-gray">
-                Relevant coursework: Algorithms, Data Structures, Machine Learning, Software Engineering, Database Systems, Computer Networks
+              <p>
+                  <b>Relevant Coursework:</b> Data Structures, Discrete Structures, Algorithms, 
+                  Intermediate Software Design, Error-Correcting Codes and Cryptography, 
+                  Web-Based System Architecture, UX Design, Algorithms for Decision Making, Formal Methods            
               </p>
             </div>
           </div>
@@ -74,35 +71,33 @@ const CV = () => {
             <div className="border-l-2 border-battleship-gray/30 pl-5 ml-3 relative py-2">
               <div className="absolute w-4 h-4 bg-battleship-gray rounded-full -left-[10px] top-3"></div>
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold text-feldgrau">Undergraduate Research Assistant</h3>
+                <h3 className="text-xl font-bold text-feldgrau">Graduate Research Assistant</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">2021 - 2023</Badge>
+                  <Badge variant="outline" className="bg-silver/20">2025 - Present</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Laboratory Name, Vanderbilt University</p>
-              <ul className="list-disc list-outside ml-4 text-ash-gray space-y-2">
-                <li>Conducted research on [research topic] under the supervision of Prof. [Name]</li>
-                <li>Implemented and evaluated algorithms for [specific task]</li>
-                <li>Published findings in [journal/conference name]</li>
-                <li>Collaborated with graduate students and faculty on [project]</li>
+              <p className="text-battleship-gray mb-2"><i>Simulation, Optimization, and Learning Lab, Vanderbilt University</i></p>
+              <ul className="list-disc list-outside ml-4 space-y-2">
+                <li>Currently pursuing research topics under the supervision of Dr. Hyde</li>
+                <li>Exploring areas of Virtual Reality (VR), security, and quantum computing.</li>
               </ul>
             </div>
-            
+
             <div className="border-l-2 border-battleship-gray/30 pl-5 ml-3 relative py-2">
               <div className="absolute w-4 h-4 bg-battleship-gray rounded-full -left-[10px] top-3"></div>
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold text-feldgrau">Summer Research Intern</h3>
+                <h3 className="text-xl font-bold text-feldgrau">Undergraduate Research Assistant</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">Summer 2022</Badge>
+                  <Badge variant="outline" className="bg-silver/20">May 2022 - August 2022</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Research Institution Name</p>
-              <ul className="list-disc list-outside ml-4 text-ash-gray space-y-2">
-                <li>Participated in [research program name]</li>
-                <li>Developed [tool/system] for [purpose]</li>
-                <li>Presented findings at [event/symposium]</li>
+              <p className="text-battleship-gray mb-2"><i>Wallace Lab, Vanderbilt University</i></p>
+              <ul className="list-disc list-outside ml-4 space-y-2">
+                <li>Partnered with Vanderbilt graduate students in multisensory neuroscience research</li>
+                <li>Analyzed data to create a literature review for a metanalysis research paper</li>
               </ul>
             </div>
+          
           </div>
         </div>
         
@@ -112,21 +107,38 @@ const CV = () => {
             <Briefcase className="h-6 w-6 text-feldgrau mr-3" />
             <h2 className="text-2xl font-bold text-feldgrau">Professional Experience</h2>
           </div>
+
+          <div className="border-l-2 border-battleship-gray/30 pl-5 ml-3 relative py-2">
+              <div className="absolute w-4 h-4 bg-battleship-gray rounded-full -left-[10px] top-3"></div>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                <h3 className="text-xl font-bold text-feldgrau">Teaching Assistant</h3>
+                <div className="text-battleship-gray">
+                  <Badge variant="outline" className="bg-silver/20">August 2025 - Present</Badge>
+                </div>
+              </div>
+              <p className="text-battleship-gray mb-2"><i>Department of Computer Science, Vanderbilt University</i></p>
+              <ul className="list-disc list-outside ml-4 space-y-2">
+                <li>Assisting Prof. Hemingway in Web-Based System Architecture (CS4278)</li>
+                <li>Held office hours to help 32 students enrolled</li>
+                <li>Graded assignments and provided feedback</li>
+              </ul>
+            </div>
           
           <div className="space-y-6">
             <div className="border-l-2 border-battleship-gray/30 pl-5 ml-3 relative py-2">
               <div className="absolute w-4 h-4 bg-battleship-gray rounded-full -left-[10px] top-3"></div>
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold text-feldgrau">Software Engineering Intern</h3>
+                <h3 className="text-xl font-bold text-feldgrau">Product Management and Engineering Intern</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">Summer 2021</Badge>
+                  <Badge variant="outline" className="bg-silver/20">January 2024 - August 2024</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Company Name, Location</p>
-              <ul className="list-disc list-outside ml-4 text-ash-gray space-y-2">
-                <li>Developed and maintained features for [product/service]</li>
-                <li>Collaborated with team members using Agile methodologies</li>
-                <li>Implemented [specific technology] to improve [metric]</li>
+              <p className="text-battleship-gray mb-2"><i>Phosphorus Cybersecurity, Nashville, TN</i></p>
+              <ul className="list-disc list-outside ml-4 space-y-2">
+                <li>Developed new workflows and streamlined Engineering processes utilizing Jira</li>
+                <li>Significantly enhancing response time to over 200 bug reports and support requests</li>
+                <li>Authored comprehensive documentation to assist cross-functional teammates and customers</li>
+                <li>Collaborated on a group project to create a company Intranet</li>
               </ul>
             </div>
             
@@ -135,14 +147,14 @@ const CV = () => {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-xl font-bold text-feldgrau">Teaching Assistant</h3>
                 <div className="text-battleship-gray">
-                  <Badge variant="outline" className="bg-silver/20">2020 - 2023</Badge>
+                  <Badge variant="outline" className="bg-silver/20">January 2024 - August 2024</Badge>
                 </div>
               </div>
-              <p className="text-battleship-gray mb-2">Department of Computer Science, Vanderbilt University</p>
-              <ul className="list-disc list-outside ml-4 text-ash-gray space-y-2">
-                <li>Assisted professors in teaching [course names]</li>
-                <li>Held office hours and lab sessions to help students</li>
-                <li>Graded assignments and provided feedback</li>
+              <p className="text-battleship-gray mb-2"><i>Department of Engineering Management, Vanderbilt University</i></p>
+              <ul className="list-disc list-outside ml-4 space-y-2">
+                <li>Assisted Prof. Kostoulas in Technology Strategy (ENGM2210)</li>
+                <li>Held office hours to help students</li>
+                <li>Graded assignments and presentations, provided feedback</li>
               </ul>
             </div>
           </div>
@@ -164,15 +176,15 @@ const CV = () => {
                 <Badge className="bg-battleship-gray/20 text-feldgrau border-none">C/C++</Badge>
                 <Badge className="bg-battleship-gray/20 text-feldgrau border-none">JavaScript</Badge>
                 <Badge className="bg-battleship-gray/20 text-feldgrau border-none">SQL</Badge>
-                <Badge className="bg-battleship-gray/20 text-feldgrau border-none">R</Badge>
+                <Badge className="bg-battleship-gray/20 text-feldgrau border-none">Typescript</Badge>
               </div>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold mb-3 text-feldgrau">Frameworks & Tools</h3>
               <div className="flex flex-wrap gap-2">
-                <Badge className="bg-ash-gray/20 text-feldgrau border-none">TensorFlow</Badge>
-                <Badge className="bg-ash-gray/20 text-feldgrau border-none">PyTorch</Badge>
+                <Badge className="bg-ash-gray/20 text-feldgrau border-none">Express</Badge>
+                <Badge className="bg-ash-gray/20 text-feldgrau border-none">Socket.io</Badge>
                 <Badge className="bg-ash-gray/20 text-feldgrau border-none">React</Badge>
                 <Badge className="bg-ash-gray/20 text-feldgrau border-none">Node.js</Badge>
                 <Badge className="bg-ash-gray/20 text-feldgrau border-none">Git</Badge>
@@ -184,8 +196,6 @@ const CV = () => {
               <h3 className="text-lg font-semibold mb-3 text-feldgrau">Research Skills</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge className="bg-silver/20 text-feldgrau border-none">Data Analysis</Badge>
-                <Badge className="bg-silver/20 text-feldgrau border-none">Machine Learning</Badge>
-                <Badge className="bg-silver/20 text-feldgrau border-none">Algorithm Design</Badge>
                 <Badge className="bg-silver/20 text-feldgrau border-none">Scientific Writing</Badge>
               </div>
             </div>
@@ -194,16 +204,17 @@ const CV = () => {
               <h3 className="text-lg font-semibold mb-3 text-feldgrau">Soft Skills</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge className="bg-silver/20 text-feldgrau border-none">Communication</Badge>
-                <Badge className="bg-silver/20 text-feldgrau border-none">Team Collaboration</Badge>
                 <Badge className="bg-silver/20 text-feldgrau border-none">Problem Solving</Badge>
-                <Badge className="bg-silver/20 text-feldgrau border-none">Time Management</Badge>
+                <Badge className="bg-silver/20 text-feldgrau border-none">Project Management</Badge>
+                <Badge className="bg-silver/20 text-feldgrau border-none">Spanish Language</Badge>
+                <Badge className="bg-silver/20 text-feldgrau border-none">Public Speaking</Badge>
               </div>
             </div>
           </div>
         </div>
         
         {/* Publications */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <div className="flex items-center mb-6">
             <FileText className="h-6 w-6 text-feldgrau mr-3" />
             <h2 className="text-2xl font-bold text-feldgrau">Selected Publications</h2>
@@ -232,7 +243,7 @@ const CV = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -8,43 +8,24 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Research Project Title 1",
-      description: "A brief description of the research project, highlighting the key aspects, technologies used, and outcomes achieved.",
-      image: "https://placehold.co/600x400/e9e3e0/586F6B",
-      tags: ["Machine Learning", "Python", "TensorFlow"],
-      githubLink: "#",
-      demoLink: "#",
-      featured: true
+      title: "Google Earth Kart",
+      description: "Google Earth Kart is a web-based video game that was created in a group for my Vanderbilt CS Senior Immersion Project. This video game uniquely incorporates Google Earth 3D rendering, allowing players to select various car models and race around Vanderbilt's campus. The project demonstrates web development skills including React and Websockets while providing users with a fun racing experience in a familiar real-world environment.",
+      image: "/google_earth_kart.jpg",
+      tags: ["ThreeJS", "Websockets", "ReactJS"],
+      githubLink: "https://github.com/vu-cs4289-25s/google_earth_kart",
+      demoLink: null,
+      featured: true,
+      award: "3rd Place - VU CS Immersion Showcase"
     },
     {
       id: 2,
-      title: "Research Project Title 2",
-      description: "Another research project with detailed description about the methodology, implementation details, and conclusions drawn.",
-      image: "https://placehold.co/600x400/e9e3e0/586F6B",
-      tags: ["Data Analysis", "R", "Statistics"],
-      githubLink: "#",
-      demoLink: null,
+      title: "Geovision Industries Website",
+      description: "Used a combination of Lovable AI and manual coding to create a website in a short timeline. Delivered a full functioning website in time with all features that the client requested.",
+      image: "/geovision.jpg",
+      tags: ["Web Development", "Typescript", "UI/UX Design"],
+      githubLink: "https://github.com/jacfrist/geovision-hub",
+      demoLink: "https://geovisionindustries.vercel.app/",
       featured: true
-    },
-    {
-      id: 3,
-      title: "Software Development Project",
-      description: "A software project developed as part of coursework or personal interest, showcasing programming skills and problem-solving abilities.",
-      image: "https://placehold.co/600x400/e9e3e0/586F6B",
-      tags: ["Java", "Software Engineering", "Algorithms"],
-      githubLink: "#",
-      demoLink: "#",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Web Application Project",
-      description: "A web application built to address a specific problem or use case, demonstrating full-stack development skills.",
-      image: "https://placehold.co/600x400/e9e3e0/586F6B",
-      tags: ["React", "Node.js", "MongoDB"],
-      githubLink: "#",
-      demoLink: "#",
-      featured: false
     },
   ];
 
@@ -57,8 +38,8 @@ const Projects = () => {
       {/* Header */}
       <section className="container-section text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-feldgrau">My Projects</h1>
-        <p className="text-lg md:text-xl text-ash-gray max-w-3xl mx-auto">
-          A collection of research projects, software development work, and academic contributions I've made during my time at Vanderbilt University.
+        <p className="text-lg md:text-xl text-battleship-gray max-w-3xl mx-auto">
+          A collection of projects I've made during my time at Vanderbilt University.
         </p>
       </section>
 
@@ -78,14 +59,24 @@ const Projects = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-feldgrau">{project.title}</h3>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex items-center gap-2 mb-4 flex-nowrap overflow-x-auto">
                     {project.tags.map(tag => (
-                      <Badge key={tag} variant="outline" className="bg-ash-gray/20 text-feldgrau border-silver">
+                      <Badge 
+                        key={tag} 
+                        variant="outline" 
+                        className="bg-ash-gray/20 text-feldgrau border-silver"
+                      >
                         {tag}
                       </Badge>
                     ))}
+                    {project.award && (
+                      <Badge className="bg-yellow-500/90 text-yellow-900 border-yellow-400 shadow-lg flex items-center">
+                        <Award className="mr-1 h-3 w-3" />
+                        {project.award}
+                      </Badge>
+                    )}
                   </div>
-                  <p className="text-ash-gray mb-6">{project.description}</p>
+                  <p className="text-battleship-gray mb-6">{project.description}</p>
                   <div className="flex flex-wrap gap-4">
                     <Button asChild size="sm" variant="outline" className="border-feldgrau text-feldgrau hover:bg-feldgrau/10">
                       <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
@@ -99,16 +90,20 @@ const Projects = () => {
                         </a>
                       </Button>
                     )}
+                    
                   </div>
+                  
                 </div>
+                
               </div>
+              
             ))}
           </div>
         </section>
       )}
 
       {/* Other Projects */}
-      <section className="container-section">
+      {/* <section className="container-section">
         <h2 className="section-title">All Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {otherProjects.map(project => (
@@ -131,11 +126,12 @@ const Projects = () => {
                 </div>
                 <p className="text-ash-gray text-sm mb-4 line-clamp-3">{project.description}</p>
                 <div className="flex gap-2 mt-auto">
-                  <Button asChild size="sm" variant="ghost" className="text-battleship-gray hover:text-feldgrau hover:bg-battleship-gray/10 p-2 h-8">
+                  {project.githubLink && (<Button asChild size="sm" variant="ghost" className="text-battleship-gray hover:text-feldgrau hover:bg-battleship-gray/10 p-2 h-8">
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4" />
                     </a>
                   </Button>
+                  )}
                   {project.demoLink && (
                     <Button asChild size="sm" variant="ghost" className="text-battleship-gray hover:text-feldgrau hover:bg-battleship-gray/10 p-2 h-8">
                       <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
@@ -148,7 +144,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

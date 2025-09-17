@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Users, Calendar, MapPin, Award, Lightbulb } from 'lucide-react';
+import { Users, Calendar, MapPin, Award, Lightbulb, BookOpen } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 const Extracurriculars = () => {
@@ -8,88 +8,94 @@ const Extracurriculars = () => {
   const activities = [
     {
       id: 1,
-      title: "Computer Science Student Association",
-      role: "President",
-      period: "2021 - 2023",
+      title: "VandyHacks",
+      role: "Content Board Member",
+      period: "March 2024 - December 2024",
       location: "Vanderbilt University",
-      description: "Led a student organization dedicated to enhancing the computer science experience for undergraduate students through workshops, networking events, and mentorship programs.",
+      description: "Developed monthly workshops focused on concepts in computer science and software development.",
       achievements: [
-        "Organized 15+ technical workshops and career development events",
-        "Established a mentorship program connecting underclassmen with seniors and graduate students",
-        "Increased membership by 40% through active recruitment and engaging programming"
+        "Notable workshops on web development and cybersecurity"
       ],
-      category: "leadership"
+      category: "academic"
     },
     {
       id: 2,
-      title: "Vanderbilt Hackathon",
-      role: "Organizer & Participant",
-      period: "2020 - 2023",
+      title: "Vanderbilt Climbing Club",
+      role: "Vice President",
+      period: "2023 - 2025",
       location: "Vanderbilt University",
-      description: "Helped organize and participated in annual hackathons, bringing together students to collaborate on innovative software projects within a limited timeframe.",
+      description: "Leading a team of 80 active members, participating in outdoor climbing trips, competitions, and community events.",
       achievements: [
-        "Won 'Best AI Implementation' award in 2022",
-        "Led a team that developed a [project description]",
-        "Organized workshops to help newcomers prepare for the competition"
+        "Led outdoor trips of up to 20 people",
+        "Planned team dinners and other social events",
+        "Organized Vanderbilt's annual bouldering competition"
       ],
-      category: "tech"
+      category: "sports"
     },
     {
       id: 3,
-      title: "Volunteer Coding Instructor",
-      role: "Instructor",
-      period: "2019 - 2022",
-      location: "Local Middle Schools, Nashville",
-      description: "Taught programming fundamentals to middle school students, aiming to increase interest in computer science among younger generations.",
+      title: "Cheatham County Animal Control",
+      role: "Volunteer & Foster",
+      period: "2023 - 2025",
+      location: "Pegram, TN",
+      description: "Volunteering at rural animal shelter to help with animal wellbeing and enrichment.",
       achievements: [
-        "Developed curriculum for beginners using Scratch and Python",
-        "Mentored over 50 students, with several continuing to advanced programming courses",
-        "Organized an end-of-year coding showcase for students to present their projects"
+        "Occasionally foster animals when urgent needs are present"
       ],
       category: "volunteer"
     },
     {
       id: 4,
-      title: "Research Symposium Committee",
-      role: "Committee Member",
-      period: "2022",
-      location: "Vanderbilt University",
-      description: "Served on the committee organizing the annual undergraduate research symposium, showcasing student research across various disciplines.",
+      title: "Nashville Humane Association",
+      role: "Volunteer",
+      period: "2020",
+      location: "Nashville, TN",
+      description: "Spent a summer volunteering at the animal shelter to aid in animal welfare and shelter operations.",
       achievements: [
-        "Reviewed research abstracts for selection",
-        "Coordinated the computer science section of the symposium",
-        "Implemented a digital platform for abstract submission and review"
+        "85+ hours of service logged"
       ],
-      category: "academic"
+      category: "volunteer"
+    },
+    {
+      id: 4,
+      title: "The Code Book",
+      role: "Simon Singh",
+      period: null,
+      location: null,
+      description: null,
+      achievements: null,
+      category: "books"
     },
     {
       id: 5,
-      title: "Intramural Sports",
-      role: "Team Captain",
-      period: "2019 - 2023",
-      location: "Vanderbilt University",
-      description: "Participated in intramural sports including soccer and basketball, promoting physical wellness alongside academic pursuits.",
-      achievements: [
-        "Led soccer team to intramural championship in 2021",
-        "Organized regular practice sessions and team building activities",
-        "Balanced competitive play with inclusive team atmosphere"
-      ],
-      category: "sports"
+      title: "Code Girls",
+      role: "Lisa Mundy",
+      period: null,
+      location: null,
+      description: null,
+      achievements: null,
+      category: "books"
     },
     {
       id: 6,
-      title: "Tech Startup Weekend",
-      role: "Participant",
-      period: "2022",
-      location: "Nashville, TN",
-      description: "Participated in an intensive 54-hour event where participants work in teams to develop business models and prototypes for tech startups.",
-      achievements: [
-        "Developed a prototype for a [product/service description]",
-        "Pitched to a panel of local entrepreneurs and investors",
-        "Received honorable mention for innovation potential"
-      ],
-      category: "tech"
-    }
+      title: "The Silent Patient",
+      role: "Alex Michaelides",
+      period: null,
+      location: null,
+      description: null,
+      achievements: null,
+      category: "books"
+    },
+    {
+      id: 7,
+      title: "The Coming Wave",
+      role: "Mustafa Suleyman",
+      period: null,
+      location: null,
+      description: null,
+      achievements: null,
+      category: "books"
+    },
   ];
 
   // Filter activities by category
@@ -110,6 +116,8 @@ const Extracurriculars = () => {
         return <Award className="h-6 w-6 text-feldgrau" />;
       case 'sports':
         return <Award className="h-6 w-6 text-feldgrau" />;
+      case 'books':
+        return <BookOpen className="h-6 w-6 text-feldgrau" />;
       default:
         return <Award className="h-6 w-6 text-feldgrau" />;
     }
@@ -121,7 +129,8 @@ const Extracurriculars = () => {
     'tech': 'Technology',
     'volunteer': 'Volunteer Work',
     'academic': 'Academic Activities',
-    'sports': 'Sports & Recreation'
+    'sports': 'Sports & Recreation',
+    'books': 'My Favorite Books'
   };
 
   // Get all unique categories
@@ -132,14 +141,19 @@ const Extracurriculars = () => {
       {/* Header */}
       <section className="container-section text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-feldgrau">Extracurricular Activities</h1>
-        <p className="text-lg md:text-xl text-ash-gray max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-battleship-gray max-w-3xl mx-auto">
           Beyond academics, I engage in various activities that help me develop leadership, teamwork, and other valuable skills.
         </p>
       </section>
 
       {/* Activities by Category */}
-      {categories.map(category => (
-        <section key={category} className={`container-section ${category % 2 === 0 ? 'bg-silver/20' : ''}`}>
+      {categories.map((category, index) => (
+          <section
+            key={category}
+            className={`max-w-7xl mx-auto px-4 py-6 md:py-8 animate-fade-in ${
+              index % 2 === 0 ? "bg-silver/20" : ""
+            }`}
+          >
           <div className="flex items-center mb-8">
             <div className="mr-4 bg-feldgrau/10 p-2 rounded-full">
               {getCategoryIcon(category)}
@@ -161,27 +175,27 @@ const Extracurriculars = () => {
                     </Badge>
                   </div>
                   
-                  <div className="flex items-center text-ash-gray text-sm mt-1">
+                  {activity.period && <div className="flex items-center text-battleship-gray text-sm mt-1">
                     <Calendar className="h-4 w-4 mr-1" /> {activity.period}
-                  </div>
+                  </div>}
                   
-                  <div className="flex items-center text-ash-gray text-sm mt-1">
+                  {activity.location && <div className="flex items-center text-battleship-gray text-sm mt-1">
                     <MapPin className="h-4 w-4 mr-1" /> {activity.location}
-                  </div>
+                  </div>}
                 </div>
                 
-                <p className="text-ash-gray mb-4">{activity.description}</p>
+                {activity.description && <p className="mb-4">{activity.description}</p>}
                 
-                <div>
+                {activity.achievements && <div>
                   <h4 className="font-semibold text-feldgrau mb-2">Key Contributions:</h4>
                   <ul className="list-disc list-inside space-y-1">
                     {activity.achievements.map((achievement, index) => (
-                      <li key={index} className="text-ash-gray text-sm">
+                      <li key={index} className=" text-sm">
                         {achievement}
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div>}
               </div>
             ))}
           </div>
