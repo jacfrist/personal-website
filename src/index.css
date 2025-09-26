@@ -222,6 +222,7 @@ header.scrolled {
   height: 15rem;           
   object-fit: cover;
   transition: transform 0.5s ease;
+  z-index: 1;
 }
 
 .project-card:hover img {
@@ -272,7 +273,7 @@ header.scrolled {
   font-size: 0.70rem;
   white-space: nowrap;
   position: absolute;
-  z-index: 100000;
+  z-index: 2;
 }
 
 .project-links a {
