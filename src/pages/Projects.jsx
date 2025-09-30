@@ -30,11 +30,11 @@ const Projects = () => {
   return (
     <div>
       {/* Header */}
-      <section className="container-section">
-        <div class="container py-5">
-            <div class="col-1"></div>
-            <div class="col-11">
-        <h1 class="title">My Projects</h1>
+      <section className="container-top">
+        <div className="container py-5">
+            <div className="col-1"></div>
+            <div className="col-11">
+        <h1 className="title">My Projects</h1>
         <p className="lead text-battleship-gray mx-auto" style={{ maxWidth: "800px" }}>A collection of projects I've made during my time at Vanderbilt University.</p>
         </div>
         </div>
@@ -43,8 +43,8 @@ const Projects = () => {
       {/* Featured Projects */}
       {featuredProjects.length > 0 && (
         <section className="container bg-white-50 rounded" style={{padding:"32px"}}>
-          <h2 class="section-title">Featured Projects</h2>
-          <div class="flex flex-wrap">
+          <h2 className="section-title">Featured Projects</h2>
+          <div className="flex flex-wrap">
             {featuredProjects.map(project => (
               <div key={project.id} className="project-card">
                 {project.award && <span className="award">{project.award}</span>}

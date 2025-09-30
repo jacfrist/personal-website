@@ -9,14 +9,20 @@ body {
 }
 
 .container {
-  padding: 32px;
+  padding: 64px;
 }
 
-.container-section {
+.container-top {
   /* max-width: 1120px; */
   background-color: #DDD5D0;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 4rem;
+}
+
+.container-bottom {
+  /* max-width: 1120px; */
+  background-color: #DDD5D0;
+  padding: 0rem 10rem;
 }
 
 .section-title {

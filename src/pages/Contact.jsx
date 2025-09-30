@@ -5,17 +5,17 @@ const Contact = () => {
   return (
     <div className="bg-timberwolf">
       {/* Header */}
-      <section className="container-section">
-        <div className="container text-center py-5">
+      <section className="container-top">
+        <div className="container text-center">
         <h1 className="title">Get in Touch</h1>
-        <p className="lead text-battleship-gray mx-auto" style={{ maxWidth: "700px" }}>
+        <p className="lead text-battleship-gray mx-auto" style={{ maxWidth: "40rem" }}>
           Have a question or want to collaborate? Feel free to reach out to me using the contact information below.
         </p>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="container">
+      <section className="container-bottom">
         <div className="row g-4 py-4">
         <div className="col-md-8">
             <div className="bg-white shadow-sm p-4 rounded border h-100">

@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div>
       {/* Main Section */}
-      <section className="container-section">
-        <div class="container row py-5 px-5">
+      <section className="container-top">
+        <div className="container row py-5 px-5">
           {/* Text */}
-          <div class="col-1"></div>
-          <div class="col-8">
+          <div className="col-1"></div>
+          <div className="col-8">
             <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>
               Hi, I'm <span style={{ color: '#7F9183' }}>Jacqueline Frist</span>
             </h1>
@@ -19,24 +19,24 @@ const Home = () => {
               <br />
               Passionate about software engineering, product management, and cybersecurity.
             </p>
-            <div class="flex flex-nowrap mt-3">
+            <div className="flex flex-nowrap mt-3">
               <Link to="/projects">
-              <button class="btn btn-dark">View my work</button>
+              <button className="btn btn-dark">View my work</button>
               </Link>
               <Link to="/contact">
-              <button class="btn btn-dark mx-2">Get in touch →</button>
+              <button className="btn btn-dark mx-2">Get in touch →</button>
               </Link>
             </div>
           </div>
 
-          <div class="col-1"></div>
+          <div className="col-1"></div>
 
           {/* Image */}
-          <div class="col-2" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="col-2" style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img
                 src="/img/headshot.png"
                 alt="Profile photo"
-                class="rounded-circle"
+                className="rounded-circle"
                 style={{ width: '250px', height: '250px', objectFit: 'cover' }}
               />
           </div>
@@ -45,8 +45,8 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="container-section" style={{ backgroundColor: '#CFC0BD' }}>
-        <div class="container ">
+      <section className="container-bottom" style={{ backgroundColor: '#CFC0BD' }}>
+        <div className="container ">
         <h2 className="section-title">About Me</h2>
         <p>
           I am a passionate Computer Science student at Vanderbilt University, where I completed my Bachelors and now pursuing my Master degree.

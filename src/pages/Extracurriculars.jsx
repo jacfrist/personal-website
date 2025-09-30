@@ -108,8 +108,8 @@ const Extracurriculars = () => {
   return (
     <div className="bg-timberwolf">
       {/* Header */}
-      <section className="container-section">
-        <div className="container py-5" style={{padding:"32px"}}>
+      <section className="container-top">
+        <div className="container">
         <h1 className="title">
           Extracurricular Activities
         </h1>
@@ -124,7 +124,7 @@ const Extracurriculars = () => {
       {categories.map((category, index) => (
         <section
           key={category}
-          className={`py-5 ${index % 2 === 0 ? "bg-white-50" : ""}`}
+          className={`${index % 2 === 0 ? "bg-white-50" : ""}`}
         >
           <div className="container">
             <div className="d-flex align-items-center mb-4">

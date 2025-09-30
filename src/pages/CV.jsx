@@ -4,17 +4,17 @@ const CV = () => {
   return (
     <div className="bg-timberwolf">
       {/* Header */}
-      <section className="container-section">
-        <div className="container py-5" style={{padding:"32px"}}>
+      <section className="container-top">
+        <div className="container" style={{padding:"32px"}}>
         <h1 className="title">Curriculum Vitae</h1>
-        <p className="lead text-battleship-gray mx-auto" style={{ maxWidth: "800px" }}>
+        <p className="lead text-battleship-gray mx-auto" style={{ maxWidth: "50rem" }}>
           My academic, research, and professional experience in the field of Computer Science.
         </p>
         </div>
       </section>
 
       {/* CV Content */}
-      <section className="container bg-white-50 rounded shadow p-5 mb-5">
+      <section className="container bg-white-50 rounded shadow p-5">
         {/* Education */}
         <div className="mb-5">
           <h2 className="h3 fw-bold text-feldgrau mb-4">🎓 Education</h2>
