@@ -127,7 +127,7 @@ const CV = () => {
                 <span className="badge bg-feldgrau">React</span>
                 <span className="badge bg-feldgrau">Node.js</span>
                 <span className="badge bg-feldgrau">Git</span>
-                <span className="badge bg-feldgrau">Docker</span>
+                <span className="badge bg-feldgrau">REST API</span>
               </div>
             </div>
 

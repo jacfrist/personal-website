@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Google Earth Kart",
       description: "Google Earth Kart is a web-based video game that was created in a group for my Vanderbilt CS Senior Immersion Project. This video game uniquely incorporates Google Earth 3D rendering, allowing players to select various car models and race around Vanderbilt's campus. Demonstrates React and Websockets while providing a fun racing experience.",
       image: "/img/google_earth_kart.jpg",
-      tags: ["ThreeJS", "Websockets", "ReactJS"],
+      tags: ["ReactJS", "REST API", "Websockets"],
       githubLink: "https://github.com/vu-cs4289-25s/google_earth_kart",
       demoLink: null,
       award: "3rd Place - VU CS Immersion Showcase",
