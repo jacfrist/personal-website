@@ -181,15 +181,6 @@ header.scrolled {
   margin-bottom: 1rem;
 }
 
-
-.section-title {
-  font-size: 2rem;      
-  font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #2e3d34;       
-}
-
 /* Project Grid */
 .flex.flex-wrap {
   display: grid;
