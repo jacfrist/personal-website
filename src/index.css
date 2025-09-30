@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  padding: "32px";
+  padding: 32px;
 }
 
 .container-section {
@@ -176,9 +176,9 @@ header.scrolled {
 
 .title {
   color: #2e3d34;
-  font-size: '2.5rem';
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: '1rem';
+  margin-bottom: 1rem;
 }
 
 
