@@ -46,7 +46,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="container-section" style={{ backgroundColor: '#CFC0BD' }}>
-        <div class="container">
+        <div class="container ">
         <h2 className="section-title">About Me</h2>
         <p>
           I am a passionate Computer Science student at Vanderbilt University, where I completed my Bachelors and now pursuing my Master degree.
