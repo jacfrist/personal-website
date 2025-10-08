@@ -22,6 +22,16 @@ const Projects = () => {
       githubLink: "https://github.com/jacfrist/geovision-hub",
       demoLink: "https://geovisionindustries.vercel.app/",
       featured: true
+    },
+    {
+      id: 3,
+      title: "AI Student Support Assistant Builder",
+      description: "An application made with AI that allows Vanderbilt faculty to create AI assistants using university documents. Students can then ask the assistant questions regarding campus policies and procedures.",
+      image: "/img/student_support_assistant.png",
+      tags: ["AI Tools", "Web Development", "Claude"],
+      githubLink: "https://github.com/jacfrist/student_support_assistant",
+      demoLink: null,
+      featured: true
     }
   ];
 
