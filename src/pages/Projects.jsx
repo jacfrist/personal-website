@@ -32,6 +32,17 @@ const Projects = () => {
       githubLink: "https://github.com/jacfrist/student_support_assistant",
       demoLink: null,
       featured: true
+    },
+    {
+      id: 4,
+      title: "Vanderbilt CCC Secondary Appointment Workflow System ",
+      description: "Using AI tools to create a comprehensive workflow management system to process secondary faculty appointments efficiently for Vanderbilt’s new College of Connected Computing.",
+      image: "/img/ccc_workflow.png",
+      tags: ["AI Tools", "Web Development", "Claude"],
+      githubLink: "https://github.com/tvan04/workflow-management-system",
+      demoLink: null,
+      featured: true,
+      ongoing: true
     }
   ];
 
@@ -58,6 +69,7 @@ const Projects = () => {
             {featuredProjects.map(project => (
               <div key={project.id} className="project-card">
                 {project.award && <span className="award">{project.award}</span>}
+                {project.ongoing && <span className="ongoing">Ongoing</span>}
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-content">
                   <h3>{project.title}</h3>
